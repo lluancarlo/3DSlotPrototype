@@ -1,0 +1,370 @@
+[gd_scene load_steps=49 format=3]
+
+[ext_resource type="ArrayMesh" uid="uid://bopdw8sras73s" path="res://assets/foods/banana.obj" id="1_j21sp"]
+[ext_resource type="ArrayMesh" uid="uid://di6ul5lca2r5j" path="res://assets/foods/apple.obj" id="2_tgqi3"]
+[ext_resource type="ArrayMesh" uid="uid://bl0gqkwuxss07" path="res://assets/foods/burger.obj" id="3_olffu"]
+[ext_resource type="ArrayMesh" uid="uid://bop1r2dv6i3gq" path="res://assets/foods/cake.obj" id="4_18u83"]
+[ext_resource type="ArrayMesh" uid="uid://7w27uoe64yr1" path="res://assets/foods/carrot.obj" id="5_mcavo"]
+[ext_resource type="ArrayMesh" uid="uid://n0hl6ot8njlp" path="res://assets/foods/cherries.obj" id="6_u3vpk"]
+[ext_resource type="ArrayMesh" uid="uid://7k6313oq40tv" path="res://assets/foods/chinese.obj" id="7_r56n7"]
+[ext_resource type="ArrayMesh" uid="uid://dns1bdh1v233d" path="res://assets/foods/chocolateWrapper.obj" id="8_x2rws"]
+[ext_resource type="ArrayMesh" uid="uid://ykwph4thm3y1" path="res://assets/foods/cocktail.obj" id="9_hieb0"]
+[ext_resource type="ArrayMesh" uid="uid://dbf5c3li5017w" path="res://assets/foods/croissant.obj" id="10_mkp71"]
+[ext_resource type="ArrayMesh" uid="uid://dnwal70sy37e7" path="res://assets/foods/donutSprinkles.obj" id="11_flyqn"]
+[ext_resource type="ArrayMesh" uid="uid://56q6tiudxc7e" path="res://assets/foods/fries.obj" id="12_ob0bs"]
+[ext_resource type="ArrayMesh" uid="uid://pm07i6ph68d1" path="res://assets/foods/hotDog.obj" id="13_h2ukx"]
+[ext_resource type="ArrayMesh" uid="uid://cteu4w8pgusux" path="res://assets/foods/iceCream.obj" id="14_hm4pa"]
+[ext_resource type="ArrayMesh" uid="uid://g6nbmdgqwek5" path="res://assets/foods/lollypop.obj" id="15_ysr0c"]
+[ext_resource type="ArrayMesh" uid="uid://ddfn6o87x38g3" path="res://assets/foods/pineapple.obj" id="16_q28u7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n16sr"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_b4kgv"]
+material = SubResource("StandardMaterial3D_n16sr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_agu0a"]
+albedo_color = Color(1, 0.815686, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dfqpv"]
+material = SubResource("StandardMaterial3D_agu0a")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_myru4"]
+albedo_color = Color(0, 1, 0.25098, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gfrdc"]
+material = SubResource("StandardMaterial3D_myru4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bik4"]
+albedo_color = Color(0, 0.882353, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4mur5"]
+material = SubResource("StandardMaterial3D_1bik4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_runuv"]
+albedo_color = Color(1, 0, 0.866667, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sdm4s"]
+material = SubResource("StandardMaterial3D_runuv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2hc4u"]
+albedo_color = Color(0.0823529, 0, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_oyv6p"]
+material = SubResource("StandardMaterial3D_2hc4u")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7kj71"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v3ull"]
+material = SubResource("StandardMaterial3D_7kj71")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2sxgx"]
+albedo_color = Color(1, 0.815686, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s64wc"]
+material = SubResource("StandardMaterial3D_2sxgx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ok2dx"]
+albedo_color = Color(0.0666667, 1, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5ejcc"]
+material = SubResource("StandardMaterial3D_ok2dx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sk7un"]
+albedo_color = Color(0, 1, 0.898039, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qsenc"]
+material = SubResource("StandardMaterial3D_sk7un")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j7xue"]
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6qf5p"]
+material = SubResource("StandardMaterial3D_j7xue")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jw1am"]
+albedo_color = Color(0.14902, 0, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7bkio"]
+material = SubResource("StandardMaterial3D_jw1am")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7m44"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7h7on"]
+material = SubResource("StandardMaterial3D_s7m44")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x0qh1"]
+albedo_color = Color(1, 0.815686, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hcihg"]
+material = SubResource("StandardMaterial3D_x0qh1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_45u60"]
+albedo_color = Color(0, 1, 0.14902, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sc0vl"]
+material = SubResource("StandardMaterial3D_45u60")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c70c7"]
+albedo_color = Color(0, 1, 0.984314, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kh01n"]
+material = SubResource("StandardMaterial3D_c70c7")
+
+[node name="Reel_01" type="Node3D"]
+transform = Transform3D(1, -5.38847e-06, 0.000123315, 5.38847e-06, 1, -0.000123394, -0.000123315, 0.000123394, 1, 0, 0, 0)
+
+[node name="1" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 1.27013, 0)
+mesh = SubResource("PlaneMesh_b4kgv")
+skeleton = NodePath("../..")
+
+[node name="Icon" type="Node3D" parent="1"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="Icon" type="MeshInstance3D" parent="1/Icon"]
+transform = Transform3D(3.5, -3.98446e-08, 1.02976e-07, -3.98446e-08, 2.58846, 2.35581, -1.02976e-07, -2.35581, 2.58846, 0, 0.0923807, 0.373429)
+mesh = ExtResource("1_j21sp")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="." groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.25, 1.27013, 0)
+
+[node name="2" type="MeshInstance3D" parent="AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_dfqpv")
+skeleton = NodePath("../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/2"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.386267, 0, 0.31714)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/2/Icon"]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, -0.281576, -0.321272)
+mesh = ExtResource("2_tgqi3")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="3" type="MeshInstance3D" parent="AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_gfrdc")
+skeleton = NodePath("../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/3"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.5905, 0, 0.0233625)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/3/Icon"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+mesh = ExtResource("3_olffu")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="4" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_4mur5")
+skeleton = NodePath("../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/4"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.244645, 0, 0.0233625)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/4/Icon"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = ExtResource("4_18u83")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="5" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_sdm4s")
+skeleton = NodePath("../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/5"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/5/Icon"]
+transform = Transform3D(3, -4.75003e-08, 1.01003e-07, -4.75003e-08, 1.91332, 2.31067, -1.01003e-07, -2.31067, 1.91332, 0, 0, 0)
+mesh = ExtResource("5_mcavo")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="6" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_oyv6p")
+skeleton = NodePath("../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/6"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/6/Icon"]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, -0.0536737, -0.860622)
+mesh = ExtResource("6_u3vpk")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="7" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_v3ull")
+skeleton = NodePath("../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/7"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/7/Icon"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -0.103262, -0.860622)
+mesh = ExtResource("7_r56n7")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="8" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_s64wc")
+skeleton = NodePath("../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/8"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/8/Icon"]
+transform = Transform3D(-3.34704e-07, 5, -5.13708e-07, 3.40213, -1.48712e-07, -3.66408, -3.66408, -5.94817e-07, -3.40213, 0, 0.639363, -0.818457)
+mesh = ExtResource("8_x2rws")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382684, 0, -0.382684, 0.92388, 0, 0, 0, 1, 0.5, -1.19209e-07, 0)
+
+[node name="9" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_5ejcc")
+skeleton = NodePath("../../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/9"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/9/Icon"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -0.160685, -0.818457)
+mesh = ExtResource("9_hieb0")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="10" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_qsenc")
+skeleton = NodePath("../../../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/10"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/10/Icon"]
+transform = Transform3D(8.9353e-08, 3, 9.59804e-08, 2.04416, -1.31134e-07, 2.19577, 2.19577, -3.55271e-14, -2.04416, -0.070138, 0.535456, -0.818457)
+mesh = ExtResource("10_mkp71")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="11" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_6qf5p")
+skeleton = NodePath("../../../../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/11"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/11/Icon"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, -0.119989, 0.557259, -0.818457)
+mesh = ExtResource("11_flyqn")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="12" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_7bkio")
+skeleton = NodePath("../../../../../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/12"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/12/Icon"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -0.119989, -0.16766, -0.818457)
+mesh = ExtResource("12_ob0bs")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="13" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_7h7on")
+skeleton = NodePath("../../../../../../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/13"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/13/Icon"]
+transform = Transform3D(-9.57789e-08, 3, 8.95688e-08, -2.19117, -1.31134e-07, 2.04909, 2.04909, -3.55271e-14, 2.19117, -0.183023, 0.569927, -0.754511)
+mesh = ExtResource("13_h2ukx")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="14" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_hcihg")
+skeleton = NodePath("../../../../../../../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/14"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/14/Icon"]
+transform = Transform3D(3.5, -4.12223e-08, 1.0447e-07, -4.12223e-08, 2.55695, 2.38999, -1.0447e-07, -2.38999, 2.55695, -0.0318894, 0.00313187, -0.286211)
+mesh = ExtResource("14_hm4pa")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="15" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_sc0vl")
+skeleton = NodePath("../../../../../../../../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/15"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/15/Icon"]
+transform = Transform3D(5, -5.8889e-08, 1.49242e-07, -5.88889e-08, 3.65278, 3.41427, -1.49242e-07, -3.41427, 3.65278, -0.0318894, -0.12067, -0.110495)
+mesh = ExtResource("15_ysr0c")
+skeleton = NodePath("../../../..")
+
+[node name="AuxNode" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode" groups=["AuxNode"]]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0.5, 0, 0)
+
+[node name="16" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.25, 0, 0)
+mesh = SubResource("PlaneMesh_kh01n")
+skeleton = NodePath("../../../../../../../../../../../../../../../../..")
+
+[node name="Icon" type="Node3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/16"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.591524, 0, 0.829629)
+
+[node name="Icon" type="MeshInstance3D" parent="AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/AuxNode/16/Icon"]
+transform = Transform3D(4, -4.71112e-08, 1.19394e-07, -4.71111e-08, 2.92222, 2.73141, -1.19394e-07, -2.73141, 2.92222, -0.0318894, -0.0108719, -0.260274)
+mesh = ExtResource("16_q28u7")
+skeleton = NodePath("../../../..")

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ckank8fxmltkk"
+path="res://.godot/imported/log_stack.obj-f622eb82e3a6771eda69825dcf84e3df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/log_stack.obj-f622eb82e3a6771eda69825dcf84e3df.mesh"]
+
+source_file="res://assets/nature/log_stack.obj"
+dest_files=["res://.godot/imported/log_stack.obj-f622eb82e3a6771eda69825dcf84e3df.mesh", "res://.godot/imported/log_stack.obj-f622eb82e3a6771eda69825dcf84e3df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

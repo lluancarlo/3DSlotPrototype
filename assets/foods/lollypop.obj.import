@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://g6nbmdgqwek5"
+path="res://.godot/imported/lollypop.obj-164bc9f7e97628d1d6446b7c3cf30098.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lollypop.obj-164bc9f7e97628d1d6446b7c3cf30098.mesh"]
+
+source_file="res://assets/foods/lollypop.obj"
+dest_files=["res://.godot/imported/lollypop.obj-164bc9f7e97628d1d6446b7c3cf30098.mesh", "res://.godot/imported/lollypop.obj-164bc9f7e97628d1d6446b7c3cf30098.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,69 @@
+[gd_scene load_steps=7 format=3 uid="uid://djhfru533cj3d"]
+
+[ext_resource type="Script" path="res://slot_machine/slotmachine3d.gd" id="1_voi1l"]
+[ext_resource type="PackedScene" path="res://slot_machine/reel/reel.tscn" id="2_pe6tv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_plr2a"]
+albedo_color = Color(0.258824, 0.470588, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_27hla"]
+material = SubResource("StandardMaterial3D_plr2a")
+size = Vector3(2.6, 3, 0.1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_osvbk"]
+material = SubResource("StandardMaterial3D_plr2a")
+size = Vector3(0.1, 0.8, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0hbrr"]
+material = SubResource("StandardMaterial3D_plr2a")
+size = Vector3(0.1, 1.5, 3)
+
+[node name="SlotMachine3D" type="Node3D"]
+script = ExtResource("1_voi1l")
+
+[node name="Box" type="Node3D" parent="."]
+
+[node name="LeftWall" type="MeshInstance3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.55)
+mesh = SubResource("BoxMesh_27hla")
+skeleton = NodePath("../..")
+
+[node name="RightWall" type="MeshInstance3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.55)
+mesh = SubResource("BoxMesh_27hla")
+skeleton = NodePath("../..")
+
+[node name="TopWall" type="MeshInstance3D" parent="Box"]
+transform = Transform3D(0.74723, -0.664565, 0, 0.664565, 0.74723, 0, 0, 0, 1, 0.970238, 1.15479, 0.0367929)
+mesh = SubResource("BoxMesh_osvbk")
+skeleton = NodePath("../..")
+
+[node name="DownWall" type="MeshInstance3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.245, -1.1, 0)
+mesh = SubResource("BoxMesh_osvbk")
+skeleton = NodePath("../..")
+
+[node name="Pad" type="MeshInstance3D" parent="Box"]
+transform = Transform3D(0.160381, -0.987055, 0, 0.987055, 0.160381, 0, 0, 0, 1, 2.02166, -0.95496, 0)
+mesh = SubResource("BoxMesh_0hbrr")
+skeleton = NodePath("../..")
+
+[node name="Reels" type="Node3D" parent="."]
+
+[node name="Reel_01" parent="Reels" instance=ExtResource("2_pe6tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.25)
+
+[node name="Reel_02" parent="Reels" instance=ExtResource("2_pe6tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.75)
+
+[node name="Reel_03" parent="Reels" instance=ExtResource("2_pe6tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
+
+[node name="Reel_04" parent="Reels" instance=ExtResource("2_pe6tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.25)
+
+[node name="Reel_05" parent="Reels" instance=ExtResource("2_pe6tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.75)
+
+[node name="Reel_06" parent="Reels" instance=ExtResource("2_pe6tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.25)

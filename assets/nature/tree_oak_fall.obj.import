@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bh5bbakoxygxt"
+path="res://.godot/imported/tree_oak_fall.obj-d786b012a7e4e2ac4ded073e97ac113c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_oak_fall.obj-d786b012a7e4e2ac4ded073e97ac113c.mesh"]
+
+source_file="res://assets/nature/tree_oak_fall.obj"
+dest_files=["res://.godot/imported/tree_oak_fall.obj-d786b012a7e4e2ac4ded073e97ac113c.mesh", "res://.godot/imported/tree_oak_fall.obj-d786b012a7e4e2ac4ded073e97ac113c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

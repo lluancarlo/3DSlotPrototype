@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crnyh0jnom2n4"
+path="res://.godot/imported/cliff_large_rock.obj-1cc93e9981d4ef4dea64c1a7fd062908.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_large_rock.obj-1cc93e9981d4ef4dea64c1a7fd062908.mesh"]
+
+source_file="res://assets/nature/cliff_large_rock.obj"
+dest_files=["res://.godot/imported/cliff_large_rock.obj-1cc93e9981d4ef4dea64c1a7fd062908.mesh", "res://.godot/imported/cliff_large_rock.obj-1cc93e9981d4ef4dea64c1a7fd062908.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

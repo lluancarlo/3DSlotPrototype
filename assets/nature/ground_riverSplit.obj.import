@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhphgas5qt7vr"
+path="res://.godot/imported/ground_riverSplit.obj-40f50f9f0c721502e46474fb1d71b7a8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_riverSplit.obj-40f50f9f0c721502e46474fb1d71b7a8.mesh"]
+
+source_file="res://assets/nature/ground_riverSplit.obj"
+dest_files=["res://.godot/imported/ground_riverSplit.obj-40f50f9f0c721502e46474fb1d71b7a8.mesh", "res://.godot/imported/ground_riverSplit.obj-40f50f9f0c721502e46474fb1d71b7a8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

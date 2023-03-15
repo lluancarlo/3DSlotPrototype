@@ -1,0 +1,3652 @@
+[gd_scene load_steps=87 format=3 uid="uid://dqpjgg1q0o36q"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_jjnqc"]
+[ext_resource type="PackedScene" uid="uid://djhfru533cj3d" path="res://slot_machine/slotmachine3d.tscn" id="1_jy5v7"]
+[ext_resource type="ArrayMesh" uid="uid://b10iisnqr0jkb" path="res://assets/nature/ground_grass.obj" id="3_noufw"]
+[ext_resource type="ArrayMesh" uid="uid://cj56jl2ohni55" path="res://assets/nature/cliff_diagonal_rock.obj" id="4_747gn"]
+[ext_resource type="ArrayMesh" uid="uid://crnyh0jnom2n4" path="res://assets/nature/cliff_large_rock.obj" id="5_n1voo"]
+[ext_resource type="ArrayMesh" uid="uid://bhphgas5qt7vr" path="res://assets/nature/ground_riverSplit.obj" id="6_6f3dk"]
+[ext_resource type="ArrayMesh" uid="uid://cawsr2uhveu2w" path="res://assets/nature/tree_oak.obj" id="6_vytn3"]
+[ext_resource type="ArrayMesh" uid="uid://bfqiua88u4lsd" path="res://assets/nature/ground_riverRocks.obj" id="7_cao8d"]
+[ext_resource type="ArrayMesh" uid="uid://cfydy70jbi847" path="res://assets/nature/tree_palmDetailedTall.obj" id="7_rrdkx"]
+[ext_resource type="ArrayMesh" uid="uid://bfwcpi17wvwgo" path="res://assets/nature/tree_cone.obj" id="7_s47dv"]
+[ext_resource type="ArrayMesh" uid="uid://dr33b6ofdy5mv" path="res://assets/nature/tree_fat.obj" id="8_pdicq"]
+[ext_resource type="ArrayMesh" uid="uid://cg1g1ty5wk5j4" path="res://assets/nature/ground_riverStraight.obj" id="8_th6bj"]
+[ext_resource type="ArrayMesh" uid="uid://c0cai8aou2vip" path="res://assets/nature/tree_blocks.obj" id="9_4blnv"]
+[ext_resource type="ArrayMesh" uid="uid://blnu3124qdoe6" path="res://assets/nature/ground_riverEndClosed.obj" id="9_nw7v7"]
+[ext_resource type="ArrayMesh" uid="uid://j4vgbpxxksca" path="res://assets/nature/tree_default.obj" id="11_qgvhq"]
+[ext_resource type="ArrayMesh" uid="uid://dantvnvq733ij" path="res://assets/nature/tree_pineSmallA.obj" id="12_qyq3k"]
+[ext_resource type="ArrayMesh" uid="uid://us3sgu660jq2" path="res://assets/nature/tree_tall_fall.obj" id="13_kfrg2"]
+[ext_resource type="ArrayMesh" uid="uid://bh5bbakoxygxt" path="res://assets/nature/tree_oak_fall.obj" id="14_mdoh7"]
+[ext_resource type="ArrayMesh" uid="uid://bdt7txj1ve6tq" path="res://assets/nature/tree_tall.obj" id="15_s2x87"]
+[ext_resource type="ArrayMesh" uid="uid://tt7t7qq5ec0w" path="res://assets/nature/tree_pineRoundC.obj" id="16_rq4xq"]
+[ext_resource type="ArrayMesh" uid="uid://diporuv43bglj" path="res://assets/nature/tree_small.obj" id="17_pmgi0"]
+[ext_resource type="ArrayMesh" uid="uid://cir6wyw5gx6fj" path="res://assets/nature/tree_pineRoundE.obj" id="18_cixry"]
+[ext_resource type="ArrayMesh" uid="uid://b1txkerq6encn" path="res://assets/nature/tree_plateau_dark.obj" id="19_454sy"]
+[ext_resource type="ArrayMesh" uid="uid://3lfxsdaum44a" path="res://assets/nature/tree_pineTallC.obj" id="19_m0y4a"]
+[ext_resource type="ArrayMesh" uid="uid://paalo1vsh41e" path="res://assets/nature/tree_plateau.obj" id="20_riv80"]
+[ext_resource type="ArrayMesh" uid="uid://drxfuxe1tchmd" path="res://assets/nature/tree_default_fall.obj" id="21_pe18s"]
+[ext_resource type="ArrayMesh" uid="uid://c22i2xbbuuyf5" path="res://assets/nature/tree_pineDefaultA.obj" id="22_64t0i"]
+[ext_resource type="ArrayMesh" uid="uid://bdp86ifuw4kq7" path="res://assets/nature/rock_tallG.obj" id="24_bslis"]
+[ext_resource type="ArrayMesh" uid="uid://c1vc0tdsdvxud" path="res://assets/nature/rock_largeB.obj" id="25_2j5kg"]
+[ext_resource type="ArrayMesh" uid="uid://b4br8afxiyxqy" path="res://assets/nature/rock_smallTopB.obj" id="26_ar21i"]
+[ext_resource type="ArrayMesh" uid="uid://col6sqkgfvry1" path="res://assets/nature/rock_smallE.obj" id="27_4kja3"]
+[ext_resource type="ArrayMesh" uid="uid://soxp5yrhu1xr" path="res://assets/nature/rock_largeD.obj" id="28_gwtck"]
+[ext_resource type="ArrayMesh" uid="uid://ci80dkioae8ug" path="res://assets/nature/rock_smallFlatC.obj" id="29_wgsg0"]
+[ext_resource type="ArrayMesh" uid="uid://6ipjjb2lxp47" path="res://assets/nature/rock_largeE.obj" id="30_vw085"]
+[ext_resource type="ArrayMesh" uid="uid://prek778fuu72" path="res://assets/nature/grass_large.obj" id="31_i0itv"]
+[ext_resource type="ArrayMesh" uid="uid://benwlilj8vfvg" path="res://assets/nature/grass_leafsLarge.obj" id="32_0h7rt"]
+[ext_resource type="ArrayMesh" uid="uid://chovsrqhbxe44" path="res://assets/nature/grass_leafs.obj" id="33_qha1t"]
+[ext_resource type="ArrayMesh" uid="uid://bxjsm1nj54ntp" path="res://assets/nature/grass.obj" id="34_y1htt"]
+[ext_resource type="ArrayMesh" uid="uid://bw80br874nj1a" path="res://assets/nature/rock_tallI.obj" id="35_7htmk"]
+[ext_resource type="ArrayMesh" uid="uid://b87hg8vdkxbty" path="res://assets/nature/tree_oak_dark.obj" id="36_fst1c"]
+[ext_resource type="ArrayMesh" uid="uid://dtbk2bjkd8ky8" path="res://assets/nature/tree_default_dark.obj" id="37_p2a33"]
+[ext_resource type="ArrayMesh" uid="uid://4bwxwp2ht7w8" path="res://assets/nature/tree_cone_dark.obj" id="38_5c6j8"]
+[ext_resource type="ArrayMesh" uid="uid://1lan4sgheyxv" path="res://assets/nature/tree_thin_dark.obj" id="39_oh1vq"]
+[ext_resource type="ArrayMesh" uid="uid://cajbqrtsd12u0" path="res://assets/nature/rock_tallD.obj" id="40_3fn45"]
+[ext_resource type="ArrayMesh" uid="uid://bg63okebiv2qa" path="res://assets/nature/rock_smallC.obj" id="41_e80cu"]
+[ext_resource type="ArrayMesh" uid="uid://cxdi1tsbqbsji" path="res://assets/nature/rock_smallTopA.obj" id="42_jl6hm"]
+[ext_resource type="ArrayMesh" uid="uid://ekvux3phsap3" path="res://assets/nature/rock_smallFlatB.obj" id="43_jaqc3"]
+[ext_resource type="ArrayMesh" uid="uid://xuxqy8ets1f3" path="res://assets/nature/rock_tallH.obj" id="44_hvlgk"]
+[ext_resource type="ArrayMesh" uid="uid://di680onjmrlo4" path="res://assets/nature/rock_smallD.obj" id="45_rw5y6"]
+[ext_resource type="ArrayMesh" uid="uid://cwiubcvdhagqj" path="res://assets/nature/rock_smallH.obj" id="46_eud6h"]
+[ext_resource type="ArrayMesh" uid="uid://dwpdl0rwh4wb8" path="res://assets/nature/log_large.obj" id="48_v4ixe"]
+[ext_resource type="ArrayMesh" uid="uid://dden8yddrv4mr" path="res://assets/nature/log.obj" id="49_07mi6"]
+[ext_resource type="ArrayMesh" uid="uid://ckank8fxmltkk" path="res://assets/nature/log_stack.obj" id="50_pyqi4"]
+[ext_resource type="ArrayMesh" uid="uid://c0w6w46ch78fr" path="res://assets/nature/log_stackLarge.obj" id="51_so5fy"]
+[ext_resource type="ArrayMesh" uid="uid://dguv8kgrihaac" path="res://assets/nature/flower_yellowA.obj" id="52_4yyms"]
+[ext_resource type="ArrayMesh" uid="uid://b0fa8h4a4mdue" path="res://assets/nature/flower_purpleA.obj" id="53_u40au"]
+[ext_resource type="ArrayMesh" uid="uid://c6pbljuvagulp" path="res://assets/nature/flower_redA.obj" id="54_vjaun"]
+[ext_resource type="ArrayMesh" uid="uid://nlsxao6257uq" path="res://assets/nature/mushroom_redGroup.obj" id="55_xcjxj"]
+[ext_resource type="Shader" path="res://water.gdshader" id="56_0e4er"]
+[ext_resource type="ArrayMesh" uid="uid://7yxbwlha5k87" path="res://assets/nature/mushroom_tanGroup.obj" id="56_freb4"]
+[ext_resource type="ArrayMesh" uid="uid://bpy265anwtn5n" path="res://assets/nature/tree_thin.obj" id="57_gvomj"]
+[ext_resource type="ArrayMesh" uid="uid://c8rivtlvb1vmi" path="res://assets/nature/tree_palmBend.obj" id="58_lvngd"]
+[ext_resource type="ArrayMesh" uid="uid://cgkpbs0vpbwle" path="res://assets/nature/cliff_rock.obj" id="59_2remk"]
+[ext_resource type="ArrayMesh" uid="uid://cqddngfo0f2tt" path="res://assets/nature/tree_fat_darkh.obj" id="60_5cuxy"]
+[ext_resource type="ArrayMesh" uid="uid://bbfkqyrbgurci" path="res://assets/nature/tree_cone_fall.obj" id="61_ncyh5"]
+[ext_resource type="AnimationLibrary" uid="uid://bryn61tg7o326" path="res://CameraAnim.res" id="62_q13ow"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m8trx"]
+albedo_color = Color(1, 0, 0, 1)
+metallic = 0.5
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1njyp"]
+material = SubResource("StandardMaterial3D_m8trx")
+top_radius = 0.4
+bottom_radius = 0.4
+height = 0.2
+radial_segments = 32
+rings = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rwchh"]
+size = Vector3(0.8, 0.2, 0.8)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_c6iyy"]
+top_radius = 0.05
+bottom_radius = 0.05
+height = 0.3
+
+[sub_resource type="BoxMesh" id="BoxMesh_63vh5"]
+size = Vector3(0.2, 0.2, 0.2)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_akpjc"]
+top_radius = 0.05
+bottom_radius = 0.05
+height = 1.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e7w8y"]
+albedo_color = Color(1, 0, 0, 1)
+metallic = 0.5
+
+[sub_resource type="SphereMesh" id="SphereMesh_0uyau"]
+material = SubResource("StandardMaterial3D_e7w8y")
+radius = 0.2
+height = 0.4
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_is3qt"]
+radius = 0.25
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qvq00"]
+resource_name = "grass"
+albedo_color = Color(0.172549, 0.847059, 0.721569, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k2vgw"]
+resource_name = "dirt"
+albedo_color = Color(0.886275, 0.513726, 0.341177, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ggbpu"]
+_surfaces = [{
+"aabb": AABB(-0.0848892, 0.176792, -0.0848892, 0.169788, 9.99868e-06, 0.169788),
+"attribute_data": PackedByteArray(222, 228, 85, 192, 222, 228, 21, 192, 100, 12, 15, 62, 111, 242, 138, 64, 222, 228, 85, 192, 53, 9, 134, 190, 18, 218, 16, 192, 222, 228, 21, 192, 222, 228, 85, 64, 243, 5, 57, 191, 79, 31, 165, 63, 111, 242, 138, 64, 222, 228, 85, 64, 75, 126, 7, 62),
+"format": 4119,
+"index_count": 15,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 1, 0, 0, 0, 3, 0, 1, 0, 3, 0, 4, 0, 1, 0, 4, 0, 5, 0, 5, 0, 4, 0, 6, 0),
+"material": SubResource("StandardMaterial3D_qvq00"),
+"name": "grass",
+"primitive": 3,
+"vertex_count": 7,
+"vertex_data": PackedByteArray(100, 218, 173, 61, 246, 8, 53, 62, 100, 218, 173, 61, 255, 127, 255, 255, 0, 0, 255, 191, 28, 138, 104, 187, 246, 8, 53, 62, 100, 218, 173, 189, 255, 127, 255, 255, 0, 0, 255, 191, 100, 218, 173, 61, 246, 8, 53, 62, 70, 70, 3, 61, 255, 127, 255, 255, 0, 0, 255, 191, 156, 120, 107, 61, 246, 8, 53, 62, 100, 218, 173, 61, 255, 127, 255, 255, 0, 0, 255, 191, 100, 218, 173, 189, 246, 8, 53, 62, 94, 59, 51, 61, 255, 127, 255, 255, 0, 0, 255, 191, 29, 54, 6, 189, 246, 8, 53, 62, 100, 218, 173, 189, 255, 127, 255, 255, 0, 0, 255, 191, 100, 218, 173, 189, 246, 8, 53, 62, 104, 139, 180, 60, 255, 127, 255, 255, 0, 0, 255, 191)
+}, {
+"aabb": AABB(-0.1804, 0, -0.1804, 0.36081, 0.176792, 0.36081),
+"attribute_data": PackedByteArray(141, 70, 227, 192, 9, 7, 140, 64, 77, 130, 161, 191, 120, 65, 98, 192, 193, 217, 155, 37, 9, 7, 140, 64, 222, 228, 85, 192, 120, 65, 98, 192, 137, 23, 137, 192, 227, 82, 108, 64, 63, 254, 47, 64, 86, 254, 134, 192, 51, 220, 147, 64, 227, 82, 108, 64, 240, 109, 65, 192, 86, 254, 134, 192, 201, 146, 221, 63, 9, 7, 140, 64, 222, 228, 85, 64, 120, 65, 98, 192, 141, 70, 227, 64, 9, 7, 140, 64, 18, 218, 16, 64, 120, 65, 98, 192, 201, 146, 221, 191, 9, 7, 140, 64, 79, 31, 165, 63, 120, 65, 98, 192, 85, 250, 104, 64, 9, 7, 140, 64, 100, 12, 15, 62, 120, 65, 98, 192, 141, 70, 227, 64, 0, 0, 128, 63, 201, 146, 221, 63, 141, 70, 195, 192, 141, 70, 227, 64, 141, 70, 195, 192, 201, 146, 221, 63, 70, 163, 1, 65, 141, 70, 227, 192, 12, 59, 99, 192, 85, 250, 104, 192, 70, 163, 1, 65, 141, 70, 227, 192, 0, 0, 128, 63, 135, 23, 28, 192, 193, 25, 120, 192, 170, 43, 71, 64, 231, 26, 129, 64, 30, 65, 153, 192, 231, 26, 129, 64, 140, 163, 15, 64, 193, 25, 120, 192, 109, 32, 94, 63, 120, 65, 98, 192, 134, 157, 145, 64, 9, 7, 140, 64, 187, 22, 199, 37, 9, 7, 140, 64, 249, 130, 220, 63, 120, 65, 98, 192, 191, 238, 177, 192, 225, 121, 128, 64, 135, 134, 70, 64, 205, 91, 121, 192, 62, 151, 104, 64, 223, 121, 128, 64, 248, 227, 46, 192, 209, 91, 121, 192),
+"format": 4119,
+"index_count": 57,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 1, 0, 0, 0, 3, 0, 4, 0, 5, 0, 6, 0, 5, 0, 4, 0, 7, 0, 8, 0, 9, 0, 10, 0, 9, 0, 8, 0, 11, 0, 12, 0, 13, 0, 14, 0, 13, 0, 12, 0, 15, 0, 16, 0, 17, 0, 18, 0, 17, 0, 16, 0, 19, 0, 17, 0, 19, 0, 20, 0, 20, 0, 19, 0, 21, 0, 20, 0, 21, 0, 22, 0, 23, 0, 24, 0, 25, 0, 24, 0, 23, 0, 26, 0, 27, 0, 28, 0, 29, 0, 28, 0, 27, 0, 30, 0, 31, 0, 32, 0, 33, 0, 32, 0, 31, 0, 34, 0),
+"material": SubResource("StandardMaterial3D_k2vgw"),
+"name": "dirt",
+"primitive": 3,
+"vertex_count": 35,
+"vertex_data": PackedByteArray(199, 186, 56, 62, 0, 0, 0, 0, 199, 186, 56, 62, 25, 211, 228, 172, 255, 255, 255, 255, 100, 218, 173, 61, 246, 8, 53, 62, 70, 70, 3, 61, 25, 211, 228, 172, 255, 255, 255, 255, 199, 186, 56, 62, 0, 0, 0, 0, 0, 0, 0, 0, 25, 211, 228, 172, 255, 255, 255, 255, 100, 218, 173, 61, 246, 8, 53, 62, 100, 218, 173, 61, 25, 211, 228, 172, 255, 255, 255, 255, 199, 186, 56, 62, 0, 0, 0, 0, 0, 0, 0, 0, 94, 220, 102, 203, 0, 0, 111, 228, 28, 138, 104, 187, 246, 8, 53, 62, 100, 218, 173, 189, 94, 220, 102, 203, 0, 0, 111, 228, 67, 24, 52, 61, 0, 0, 0, 0, 199, 186, 56, 190, 94, 220, 102, 203, 0, 0, 111, 228, 100, 218, 173, 61, 246, 8, 53, 62, 70, 70, 3, 61, 94, 220, 102, 203, 0, 0, 111, 228, 67, 24, 52, 61, 0, 0, 0, 0, 199, 186, 56, 62, 255, 127, 228, 172, 255, 255, 255, 191, 100, 218, 173, 61, 246, 8, 53, 62, 100, 218, 173, 61, 255, 127, 228, 172, 255, 255, 255, 191, 199, 186, 56, 62, 0, 0, 0, 0, 199, 186, 56, 62, 255, 127, 228, 172, 255, 255, 255, 191, 156, 120, 107, 61, 246, 8, 53, 62, 100, 218, 173, 61, 255, 127, 228, 172, 255, 255, 255, 191, 67, 24, 52, 61, 0, 0, 0, 0, 199, 186, 56, 190, 25, 211, 255, 255, 0, 0, 255, 191, 29, 54, 6, 189, 246, 8, 53, 62, 100, 218, 173, 189, 25, 211, 255, 255, 0, 0, 255, 191, 73, 93, 189, 189, 0, 0, 0, 0, 199, 186, 56, 190, 25, 211, 255, 255, 0, 0, 255, 191, 28, 138, 104, 187, 246, 8, 53, 62, 100, 218, 173, 189, 25, 211, 255, 255, 0, 0, 255, 191, 199, 186, 56, 62, 0, 0, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 255, 255, 255, 191, 67, 24, 52, 61, 0, 0, 0, 0, 199, 186, 56, 62, 255, 127, 0, 0, 255, 255, 255, 191, 199, 186, 56, 62, 0, 0, 0, 0, 199, 186, 56, 62, 255, 127, 0, 0, 255, 255, 255, 191, 67, 24, 52, 61, 0, 0, 0, 0, 199, 186, 56, 190, 255, 127, 0, 0, 255, 255, 255, 191, 199, 186, 56, 190, 0, 0, 0, 0, 92, 182, 236, 61, 255, 127, 0, 0, 255, 255, 255, 191, 73, 93, 189, 189, 0, 0, 0, 0, 199, 186, 56, 190, 255, 127, 0, 0, 255, 255, 255, 191, 199, 186, 56, 190, 0, 0, 0, 0, 0, 0, 0, 0, 255, 127, 0, 0, 254, 255, 255, 191, 29, 54, 6, 189, 246, 8, 53, 62, 100, 218, 173, 189, 213, 36, 181, 194, 13, 86, 255, 191, 199, 186, 56, 190, 0, 0, 0, 0, 0, 0, 0, 0, 213, 36, 181, 194, 13, 86, 255, 191, 73, 93, 189, 189, 0, 0, 0, 0, 199, 186, 56, 190, 213, 36, 181, 194, 13, 86, 255, 191, 100, 218, 173, 189, 246, 8, 53, 62, 104, 139, 180, 60, 213, 36, 181, 194, 13, 86, 255, 191, 100, 218, 173, 189, 246, 8, 53, 62, 104, 139, 180, 60, 229, 44, 228, 172, 255, 127, 255, 191, 199, 186, 56, 190, 0, 0, 0, 0, 92, 182, 236, 61, 229, 44, 228, 172, 255, 127, 255, 191, 199, 186, 56, 190, 0, 0, 0, 0, 0, 0, 0, 0, 229, 44, 228, 172, 255, 127, 255, 191, 100, 218, 173, 189, 246, 8, 53, 62, 94, 59, 51, 61, 229, 44, 228, 172, 255, 127, 255, 191, 199, 186, 56, 190, 0, 0, 0, 0, 92, 182, 236, 61, 6, 108, 225, 166, 78, 227, 255, 191, 156, 120, 107, 61, 246, 8, 53, 62, 100, 218, 173, 61, 6, 108, 225, 166, 78, 227, 255, 191, 67, 24, 52, 61, 0, 0, 0, 0, 199, 186, 56, 62, 6, 108, 225, 166, 78, 227, 255, 191, 100, 218, 173, 189, 246, 8, 53, 62, 94, 59, 51, 61, 6, 108, 225, 166, 78, 227, 255, 191)
+}]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qjhbl"]
+size = Vector2(26, 26)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6sla2"]
+render_priority = 0
+shader = ExtResource("56_0e4er")
+shader_parameter/WATER_COL = Color(0.27451, 0.545098, 0.992157, 1)
+shader_parameter/WATER2_COL = Color(0.196078, 0.501961, 0.980392, 1)
+shader_parameter/FOAM_COL = Color(0.14902, 0.478431, 0.976471, 1)
+shader_parameter/distortion_speed = 1.0
+shader_parameter/tile = Vector2(10, 10)
+shader_parameter/height = 0.3
+shader_parameter/wave_size = Vector2(4, 4)
+shader_parameter/wave_speed = 5.0
+
+[sub_resource type="Gradient" id="Gradient_yv18q"]
+offsets = PackedFloat32Array(0.672414, 0.896552)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_cno05"]
+noise_type = 4
+seed = 11
+fractal_type = 2
+fractal_ping_pong_strength = 3.0
+metadata/_preview_in_3d_space_ = true
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_bguv6"]
+seamless = true
+color_ramp = SubResource("Gradient_yv18q")
+noise = SubResource("FastNoiseLite_cno05")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rf67k"]
+sky_top_color = Color(0.439216, 0.67451, 0.960784, 1)
+sky_horizon_color = Color(0.509804, 0.780392, 1, 1)
+sky_curve = 0.126134
+sky_energy_multiplier = 1.2
+sky_cover = SubResource("NoiseTexture2D_bguv6")
+sun_curve = 0.643064
+
+[sub_resource type="Sky" id="Sky_do2qd"]
+sky_material = SubResource("ProceduralSkyMaterial_rf67k")
+
+[sub_resource type="Environment" id="Environment_7a7h8"]
+background_mode = 2
+sky = SubResource("Sky_do2qd")
+ambient_light_source = 3
+volumetric_fog_enabled = true
+volumetric_fog_length = 16.0
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_jjnqc")
+
+[node name="Cam" type="Camera3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(-0.673851, -0.288698, 0.680131, 3.09086e-08, 0.920505, 0.390731, -0.738867, 0.263294, -0.620283, 23.0279, 0.17538, 0)
+
+[node name="AnimPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"CameraAnim": ExtResource("62_q13ow")
+}
+
+[node name="LightSet" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.68491, 1.46133, 0)
+
+[node name="SunLight" type="DirectionalLight3D" parent="LightSet"]
+transform = Transform3D(0.706806, -0.489706, 0.510502, 0.191329, 0.827093, 0.528499, -0.681042, -0.275872, 0.67829, 0, 0, 0)
+shadow_enabled = true
+shadow_opacity = 0.9
+
+[node name="LightLeft" type="SpotLight3D" parent="LightSet"]
+transform = Transform3D(0.481754, -0.197126, 0.853847, 0, 0.97437, 0.224951, -0.876307, -0.108371, 0.469406, 1.03809, 0, 2.41122)
+visible = false
+
+[node name="LightRight" type="SpotLight3D" parent="LightSet"]
+transform = Transform3D(-0.385906, -0.207526, 0.898893, 0, 0.97437, 0.224951, -0.922538, 0.08681, -0.376015, 1.03809, 0, -2.16673)
+visible = false
+
+[node name="LightTop" type="SpotLight3D" parent="LightSet"]
+transform = Transform3D(0.818561, -2.51087e-08, 0.57442, -0.57442, -3.57804e-08, 0.818561, 0, -1, -4.37114e-08, 1.74838, 2.08922, 0.0426816)
+spot_range = 29.19
+spot_angle = 40.0
+
+[node name="LightLever" type="SpotLight3D" parent="LightSet"]
+transform = Transform3D(0.425186, -0.663107, 0.616041, -0.885821, -0.165113, 0.433658, -0.185845, -0.730087, -0.657597, 0.815186, 1.7824, -3.08251)
+spot_angle = 20.0
+
+[node name="Slot" type="Node3D" parent="."]
+
+[node name="SlotMachine3D" parent="Slot" instance=ExtResource("1_jy5v7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46133, 0)
+
+[node name="Buttons" type="Node3D" parent="Slot"]
+transform = Transform3D(0.160381, -0.987055, 0, 0.987055, 0.160381, 0, 0, 0, 1, 2.02166, 0.506374, 0)
+
+[node name="SpinButton" type="Node3D" parent="Slot/Buttons"]
+transform = Transform3D(-1.49012e-08, -1, 0, 0.7, -4.47035e-08, 0, 0, 0, 1, 0.149409, -0.18236, -0.00570035)
+
+[node name="Mesh" type="MeshInstance3D" parent="Slot/Buttons/SpinButton"]
+transform = Transform3D(1, 0, 0, 7.45058e-09, 1, 0, 0, 0, 1, 0, 5.96046e-08, 0)
+mesh = SubResource("CylinderMesh_1njyp")
+skeleton = NodePath("../..")
+
+[node name="Label3D" type="Label3D" parent="Slot/Buttons/SpinButton"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 4.44089e-16, 1.49012e-08, -1, -1, -4.37114e-08, 1.91069e-15, -0.0105364, -0.104631, 0)
+pixel_size = 0.007
+double_sided = false
+text = "SPIN"
+outline_size = 10
+uppercase = true
+
+[node name="Area3D" type="Area3D" parent="Slot/Buttons/SpinButton"]
+transform = Transform3D(1, 0, 0, 7.45058e-09, 1, 0, 0, 0, 1, 0, 5.96046e-08, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Slot/Buttons/SpinButton/Area3D"]
+transform = Transform3D(1, 0, 0, 2.23517e-08, 1, 0, 0, 0, 1, 0.00536919, -0.0231311, 0)
+shape = SubResource("BoxShape3D_rwchh")
+
+[node name="SpinLever" type="Node3D" parent="Slot/Buttons"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.259524, 1.38145, -1.79015)
+
+[node name="PipeBase" type="MeshInstance3D" parent="Slot/Buttons/SpinLever"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_c6iyy")
+skeleton = NodePath("../..")
+
+[node name="BoxBase" type="MeshInstance3D" parent="Slot/Buttons/SpinLever"]
+transform = Transform3D(1, 0, -8.47033e-21, 0, 0.999999, 4.61853e-14, -5.96046e-08, -2.4869e-14, 1, -0.0112727, 0.0266252, -0.22074)
+mesh = SubResource("BoxMesh_63vh5")
+skeleton = NodePath("../..")
+
+[node name="Pipe" type="MeshInstance3D" parent="Slot/Buttons/SpinLever"]
+transform = Transform3D(-4.47035e-08, -1, -4.23516e-21, 0.999999, -4.47035e-08, 7.10542e-14, -4.26326e-14, -1.49012e-08, 1, 0.818421, 0.0159118, -0.214848)
+mesh = SubResource("CylinderMesh_akpjc")
+skeleton = NodePath("../..")
+
+[node name="Ball" type="MeshInstance3D" parent="Slot/Buttons/SpinLever"]
+transform = Transform3D(1, 0, -8.47033e-22, 0, 0.999999, 8.52651e-14, -5.96046e-08, -2.84217e-14, 1, 1.72589, 0.00244462, -0.216308)
+mesh = SubResource("SphereMesh_0uyau")
+skeleton = NodePath("../..")
+
+[node name="Area3D" type="Area3D" parent="Slot/Buttons/SpinLever/Ball"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Slot/Buttons/SpinLever/Ball/Area3D"]
+shape = SubResource("SphereShape3D_is3qt")
+
+[node name="Scene" type="Node3D" parent="."]
+
+[node name="Hill" type="Node3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="CliffDiagonalRock" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 2, 0, -6.338)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock5" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 5.33017, 0, -9.69071)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock10" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 8.33017, 0, -12.6907)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock2" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, 2, 0, 6.338)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock6" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, 5.39062, 0, 9.72428)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock9" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, 8.39062, 0, 12.7243)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 1, 0, 0)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock3" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 1, 0, -3)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock2" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 1, 0, 3)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.156, 3.01, 0)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass3" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.156, 3.01, -3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass6" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.156, 3.01, -6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass4" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 0.19897, 3.01, -6.27467)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass5" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 1.63971, 3.01, -7.73945)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass32" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 3.73794, 3.01, -9.83585)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass34" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 5.73794, 3.01, -11.8358)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass35" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 7.73794, 3.01, -13.8358)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass8" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 0.19897, 3.01, 6.24439)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass9" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 2.2737, 3.01, 8.30851)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass31" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 4.34198, 3.01, 10.3905)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass33" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 6.34198, 3.01, 12.3905)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass36" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 7.34198, 3.01, 13.3905)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass2" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.156, 3.01, 3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass7" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.156, 3.01, 6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock3" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -1, 3, -6.338)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock7" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 2.33017, 3, -9.69071)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock12" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 5.33017, 3, -12.6907)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock4" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -1, 3, 6.338)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock8" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, 2.39062, 3, 9.72428)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock11" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, 5.39062, 3, 12.7243)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock4" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -2, 3, 0)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock5" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -2, 3, -3)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock6" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -2, 3, 3)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass10" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.156, 6.01, 0)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass11" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.156, 6.01, -3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass12" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.156, 6.01, -6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass13" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, -2.80103, 6.01, -6.27467)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass14" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, -1.36029, 6.01, -7.73945)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass37" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 0.737936, 6.01, -9.83585)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass38" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 2.73794, 6.01, -11.8358)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass39" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 4.73794, 6.01, -13.8358)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass15" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, -2.80103, 6.01, 6.24439)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass16" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, -0.7263, 6.01, 8.30851)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass40" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 1.34198, 6.01, 10.3905)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass41" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 3.34198, 6.01, 12.3905)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass42" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(2.12132, 0, 2.12132, 0, 3, 0, -2.12132, 0, 2.12132, 4.34198, 6.01, 13.3905)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass17" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.156, 6.01, 3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass18" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.156, 6.01, 6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock13" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -4, 6, -6.338)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock14" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -0.66983, 6, -9.69071)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock15" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, 2.33017, 6, -12.6907)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock16" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -4, 6, 6.338)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock17" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -0.60938, 6, 9.72428)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffDiagonalRock18" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, 2.39062, 6, 12.7243)
+mesh = ExtResource("4_747gn")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock7" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -5, 6, 0)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock8" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -5, 6, -3)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="CliffLargeRock9" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -5, 6, 3)
+mesh = ExtResource("5_n1voo")
+skeleton = NodePath("../../..")
+
+[node name="Tree1" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.156, 3.01, -4)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree6" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.28178, 3.01, -7)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree7" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.05105, 3.01, -13.225)
+mesh = ExtResource("7_rrdkx")
+skeleton = NodePath("../../..")
+
+[node name="Tree8" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.86556, 3.01, 7.07613)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree9" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.46938, 3.01, 11.1997)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree5" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.156, 3.01, 2)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree3" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.156, 3.01, 0)
+mesh = ExtResource("7_s47dv")
+skeleton = NodePath("../../..")
+
+[node name="Tree10" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.05928, 3.01, 7.6762)
+mesh = ExtResource("7_s47dv")
+skeleton = NodePath("../../..")
+
+[node name="Tree11" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.91585, 3.01, 12.7788)
+mesh = ExtResource("7_s47dv")
+skeleton = NodePath("../../..")
+
+[node name="Tree12" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.21327, 3.01, -9.05758)
+mesh = ExtResource("9_4blnv")
+skeleton = NodePath("../../..")
+
+[node name="Tree13" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.21112, 3.01, -12.9582)
+mesh = ExtResource("7_s47dv")
+skeleton = NodePath("../../..")
+
+[node name="Tree2" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.156, 3.01, -2)
+mesh = ExtResource("8_pdicq")
+skeleton = NodePath("../../..")
+
+[node name="Tree16" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.76117, 3.01, 10.5136)
+mesh = ExtResource("11_qgvhq")
+skeleton = NodePath("../../..")
+
+[node name="Tree23" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.28256, 3.01, 9.03199)
+mesh = ExtResource("12_qyq3k")
+skeleton = NodePath("../../..")
+
+[node name="Tree17" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 8.05607, 3.01, 12.8288)
+mesh = ExtResource("8_pdicq")
+skeleton = NodePath("../../..")
+
+[node name="Tree18" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.697699, 3.01, 5.31209)
+mesh = ExtResource("8_pdicq")
+skeleton = NodePath("../../..")
+
+[node name="Tree19" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.458233, 3.01, -5.39997)
+mesh = ExtResource("8_pdicq")
+skeleton = NodePath("../../..")
+
+[node name="Tree14" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.37848, 3.01, -9.28954)
+mesh = ExtResource("8_pdicq")
+skeleton = NodePath("../../..")
+
+[node name="Tree15" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.22046, 3.01, -11.0231)
+mesh = ExtResource("8_pdicq")
+skeleton = NodePath("../../..")
+
+[node name="Tree4" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.156, 3.01, 4)
+mesh = ExtResource("13_kfrg2")
+skeleton = NodePath("../../..")
+
+[node name="Tree20" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.6999, 6.01, -1.69712)
+mesh = ExtResource("8_pdicq")
+skeleton = NodePath("../../..")
+
+[node name="Tree24" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.33594, 6.01, -6.71872)
+mesh = ExtResource("14_mdoh7")
+skeleton = NodePath("../../..")
+
+[node name="Tree21" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.43571, 6.01, 2.20618)
+mesh = ExtResource("15_s2x87")
+skeleton = NodePath("../../..")
+
+[node name="Tree25" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.91267, 6.01, 10.187)
+mesh = ExtResource("16_rq4xq")
+skeleton = NodePath("../../..")
+
+[node name="Tree22" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.629176, 6.01, 9.12806)
+mesh = ExtResource("17_pmgi0")
+skeleton = NodePath("../../..")
+
+[node name="Tree26" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.01134, 6.01, -3.71288)
+mesh = ExtResource("18_cixry")
+skeleton = NodePath("../../..")
+
+[node name="Tree28" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0264797, 6.01, -8.67233)
+mesh = ExtResource("19_m0y4a")
+skeleton = NodePath("../../..")
+
+[node name="Tree29" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.16464, 6.01, -5.69245)
+mesh = ExtResource("20_riv80")
+skeleton = NodePath("../../..")
+
+[node name="Tree32" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.01748, 6.01, 13.3061)
+mesh = ExtResource("20_riv80")
+skeleton = NodePath("../../..")
+
+[node name="Tree33" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.30103, 6.01, 6.2)
+mesh = ExtResource("14_mdoh7")
+skeleton = NodePath("../../..")
+
+[node name="Tree34" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.88828, 6.01, 5.15767)
+mesh = ExtResource("21_pe18s")
+skeleton = NodePath("../../..")
+
+[node name="Tree30" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.29419, 6.01, -8.57225)
+mesh = ExtResource("22_64t0i")
+skeleton = NodePath("../../..")
+
+[node name="Tree31" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.24071, 6.01, -11.1452)
+mesh = ExtResource("17_pmgi0")
+skeleton = NodePath("../../..")
+
+[node name="Tree27" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.80696, 6.01, -12.1296)
+mesh = ExtResource("19_454sy")
+skeleton = NodePath("../../..")
+
+[node name="Rock01" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.590413, 6.01, -10.347)
+mesh = ExtResource("24_bslis")
+skeleton = NodePath("../../..")
+
+[node name="Rock02" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.27463, 6.01, -12.5756)
+mesh = ExtResource("25_2j5kg")
+skeleton = NodePath("../../..")
+
+[node name="Rock03" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.16984, 6.01, -5.53212)
+mesh = ExtResource("25_2j5kg")
+skeleton = NodePath("../../..")
+
+[node name="Rock04" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.66771, 6.01, 4.30581)
+mesh = ExtResource("25_2j5kg")
+skeleton = NodePath("../../..")
+
+[node name="Rock05" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.2944, 6.01, 8.0234)
+mesh = ExtResource("26_ar21i")
+skeleton = NodePath("../../..")
+
+[node name="Rock07" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.43929, 6.01, 3.57369)
+mesh = ExtResource("26_ar21i")
+skeleton = NodePath("../../..")
+
+[node name="Rock08" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.16393, 6.01, -1.1294)
+mesh = ExtResource("26_ar21i")
+skeleton = NodePath("../../..")
+
+[node name="Rock09" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.20534, 6.01, 0.0023222)
+mesh = ExtResource("27_4kja3")
+skeleton = NodePath("../../..")
+
+[node name="Rock10" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.15709, 3.01, 1.4665)
+mesh = ExtResource("28_gwtck")
+skeleton = NodePath("../../..")
+
+[node name="Rock11" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.46403, 3.01, -7.90083)
+mesh = ExtResource("29_wgsg0")
+skeleton = NodePath("../../..")
+
+[node name="Rock12" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.08218, 3.01, -8.01478)
+mesh = ExtResource("30_vw085")
+skeleton = NodePath("../../..")
+
+[node name="Rock13" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.94312, 3.01, 9.3125)
+mesh = ExtResource("30_vw085")
+skeleton = NodePath("../../..")
+
+[node name="Grass01" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.29906, 3.01, 11.8266)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass02" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.3081, 3.01, 11.931)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass03" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.41659, 3.01, 11.1107)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass04" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.71211, 3.01, 10.3941)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass05" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.99563, 3.01, 9.77233)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass06" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.92134, 3.01, 10.112)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass07" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.52906, 3.01, 8.37719)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass08" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.78966, 3.01, 7.55508)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass09" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.45603, 3.01, 7.002)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass10" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.50742, 3.01, 6.34733)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass11" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.347151, 3.01, 6.29577)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass12" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.05059, 3.01, 4.75689)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass13" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.148213, 3.01, 4.74534)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass14" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.289387, 3.01, 3.70781)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass15" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.42268, 3.01, 3.37313)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass16" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.513893, 3.01, 2.68816)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass17" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.439224, 3.01, 1.13949)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass18" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.450745, 3.01, 0.195202)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass19" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.23337, 3.01, -0.558271)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass20" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.529063, 3.01, -0.949388)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass21" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.5612, 3.01, -3.02064)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass22" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.301591, 3.01, -3.0869)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass23" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.310264, 3.01, -4.04308)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass24" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.11875, 3.01, -4.8295)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass25" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.914402, 3.01, -5.8568)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass26" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.429187, 3.01, -6.47925)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass27" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.64944, 3.01, -6.33106)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass28" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.53058, 3.01, -7.62976)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass29" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.84139, 3.01, -8.51108)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass31" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.83279, 3.01, -8.73169)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass32" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.81182, 3.01, -9.75435)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass33" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.58915, 3.01, -10.5792)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass34" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.54601, 3.01, -10.4378)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass35" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.611, 3.01, -11.5502)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass36" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.27217, 3.01, -12.5731)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass37" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.17558, 3.01, -12.1893)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass38" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.44405, 3.01, -13.0861)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass39" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.9147, 3.01, -12.6743)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass40" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.95174, 3.01, -10.9073)
+mesh = ExtResource("32_0h7rt")
+skeleton = NodePath("../../..")
+
+[node name="Grass41" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0527987, 3.01, -5.10006)
+mesh = ExtResource("32_0h7rt")
+skeleton = NodePath("../../..")
+
+[node name="Grass42" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.77278, 3.01, -1.94465)
+mesh = ExtResource("32_0h7rt")
+skeleton = NodePath("../../..")
+
+[node name="Grass43" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.675478, 3.01, 5.66947)
+mesh = ExtResource("32_0h7rt")
+skeleton = NodePath("../../..")
+
+[node name="Grass44" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.82353, 6.01, 1.31877)
+mesh = ExtResource("32_0h7rt")
+skeleton = NodePath("../../..")
+
+[node name="Grass45" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.72845, 6.01, 2.54861)
+mesh = ExtResource("33_qha1t")
+skeleton = NodePath("../../..")
+
+[node name="Grass46" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.15248, 6.01, -0.331693)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Grass47" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.74223, 6.01, 0.926276)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass48" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.58125, 6.01, 2.15783)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass49" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.16768, 6.01, 3.18407)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass50" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.04674, 6.01, 4.36182)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass51" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.2119, 6.01, 1.40098)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass52" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.28641, 6.01, 0.453917)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass53" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.20002, 6.01, -0.623845)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass54" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.95751, 6.01, -1.48776)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass55" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.15718, 6.01, -2.7255)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass56" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.1195, 6.01, -3.77478)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass57" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.01186, 6.01, -4.58739)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass58" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.52201, 6.01, -5.09005)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass59" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.14339, 6.01, -5.6032)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass60" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.43564, 6.01, -6.45474)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass61" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.62328, 6.01, -6.21623)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass62" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.590396, 6.01, -7.1097)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass63" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.961208, 6.01, -7.91315)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass64" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.0249724, 6.01, -7.91727)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass65" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.350147, 6.01, -8.73247)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass66" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.04064, 6.01, -9.63892)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass67" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.61488, 6.01, -9.44218)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass68" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.48632, 6.01, -10.331)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass69" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.42826, 6.01, -10.169)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass70" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.99665, 6.01, -10.8606)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass71" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.2392, 6.01, -11.9734)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass72" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.5707, 6.01, -11.3215)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass73" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.84711, 6.01, -12.7497)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass74" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.99799, 6.01, -13.1402)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass75" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.8892, 6.01, -11.0239)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass76" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.0468726, 6.01, -9.51398)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass77" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.594543, 6.01, -8.32502)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass78" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.51968, 6.01, 4.94266)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass79" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.88145, 6.01, 5.75749)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass80" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.31197, 6.01, 6.71776)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass81" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.97822, 6.01, 5.73832)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass82" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.80694, 6.01, 6.72947)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass83" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.887145, 6.01, 6.70446)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass84" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.00379705, 6.01, 7.5745)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass85" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.164505, 6.01, 8.47541)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass86" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.786989, 6.01, 8.26084)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass87" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.24615, 6.01, 9.01511)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass88" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.824693, 6.01, 9.85147)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass89" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.36428, 6.01, 10.1919)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass90" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.99692, 6.01, 9.58559)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass91" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.12147, 6.01, 11.291)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass92" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.86937, 6.01, 11.8263)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass93" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.4841, 6.01, 11.1991)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass94" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.10621, 6.01, 11.7658)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass95" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.49374, 6.01, 12.3269)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass96" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.66252, 6.01, 12.2548)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass97" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.23412, 6.01, 12.6864)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass98" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.72656, 6.01, 13.2426)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass99" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.63056, 6.01, 13.2696)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass30" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.57079, 3.25278, -7.95815)
+mesh = ExtResource("31_i0itv")
+skeleton = NodePath("../../..")
+
+[node name="Rock06" type="MeshInstance3D" parent="Scene/Hill"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.68885, 6.01, 14.6103)
+mesh = ExtResource("35_7htmk")
+skeleton = NodePath("../../..")
+
+[node name="FrontField" type="Node3D" parent="Scene"]
+
+[node name="GroundGrass10" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.06151, 0, 0)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass12" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.062, 0, -3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass13" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.062, 0, -6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass11" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.062, 0, 3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass14" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.062, 0, 6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass15" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.931811, 0, 0)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass16" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.931323, 0, -3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass17" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.931323, 0, -6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass20" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.931, 0, -9)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass18" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.931323, 0, 3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass19" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.931323, 0, 6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass21" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.931, 0, 9)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass22" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.92042, 0, 0)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass23" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.91993, 0, -3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass24" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.91993, 0, -6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass25" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.91961, 0, -9)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass29" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.91961, 0, -12)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass26" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.91993, 0, 3)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass27" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.91993, 0, 6)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass28" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.91961, 0, 9)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass30" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.91961, 0, 12)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="Tree01" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.18657, 0, 3.89637)
+mesh = ExtResource("17_pmgi0")
+skeleton = NodePath("../../..")
+
+[node name="Tree02" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.301365, 0, 5.26927)
+mesh = ExtResource("36_fst1c")
+skeleton = NodePath("../../..")
+
+[node name="Tree03" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.28408, 0, 8.29519)
+mesh = ExtResource("7_s47dv")
+skeleton = NodePath("../../..")
+
+[node name="Tree04" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.9438, 0, 10.1765)
+mesh = ExtResource("37_p2a33")
+skeleton = NodePath("../../..")
+
+[node name="Tree05" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.20885, 0, -4.57581)
+mesh = ExtResource("37_p2a33")
+skeleton = NodePath("../../..")
+
+[node name="Tree06" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.38408, 0, -6.61312)
+mesh = ExtResource("38_5c6j8")
+skeleton = NodePath("../../..")
+
+[node name="Tree07" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.65536, 0, -9.5368)
+mesh = ExtResource("39_oh1vq")
+skeleton = NodePath("../../..")
+
+[node name="Tree08" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.99061, 0, -11.6536)
+mesh = ExtResource("37_p2a33")
+skeleton = NodePath("../../..")
+
+[node name="Tree09" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.54265, 9.53674e-07, -1.73692)
+mesh = ExtResource("20_riv80")
+skeleton = NodePath("../../..")
+
+[node name="Tree10" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.76443, 9.53674e-07, 0.734974)
+mesh = ExtResource("37_p2a33")
+skeleton = NodePath("../../..")
+
+[node name="Rock01" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.38019, 9.53674e-07, 2.54689)
+mesh = ExtResource("24_bslis")
+skeleton = NodePath("../../..")
+
+[node name="Rock02" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.35898, 9.53674e-07, 2.02433)
+mesh = ExtResource("40_3fn45")
+skeleton = NodePath("../../..")
+
+[node name="Rock03" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.78478, 9.53674e-07, 2.96933)
+mesh = ExtResource("41_e80cu")
+skeleton = NodePath("../../..")
+
+[node name="Rock04" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.763472, 9.53674e-07, 6.41366)
+mesh = ExtResource("42_jl6hm")
+skeleton = NodePath("../../..")
+
+[node name="Rock05" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.75207, 9.53674e-07, 8.50086)
+mesh = ExtResource("43_jaqc3")
+skeleton = NodePath("../../..")
+
+[node name="Rock06" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.67839, 0.0178263, 10.1399)
+mesh = ExtResource("44_hvlgk")
+skeleton = NodePath("../../..")
+
+[node name="Rock07" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.41545, 0.0178263, -6.32768)
+mesh = ExtResource("44_hvlgk")
+skeleton = NodePath("../../..")
+
+[node name="Rock09" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.76005, 0.0178263, -7.41321)
+mesh = ExtResource("45_rw5y6")
+skeleton = NodePath("../../..")
+
+[node name="Rock10" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.83395, 0.0178263, -3.50977)
+mesh = ExtResource("46_eud6h")
+skeleton = NodePath("../../..")
+
+[node name="Rock11" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.446972, 0.0178263, -2.9472)
+mesh = ExtResource("43_jaqc3")
+skeleton = NodePath("../../..")
+
+[node name="Rock12" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.98344, 0.0178268, 4.48069)
+mesh = SubResource("ArrayMesh_ggbpu")
+skeleton = NodePath("../../..")
+
+[node name="Rock08" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.61967, 0.0178263, -11.0449)
+mesh = ExtResource("40_3fn45")
+skeleton = NodePath("../../..")
+
+[node name="Grass01" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.28476, 0.0178263, -9.15453)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass02" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.9212, 0.0178263, -8.58363)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass03" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.98871, 0.0178263, -7.67769)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass04" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.15742, 0.0178263, -6.89949)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass05" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.16889, 0.0178263, -6.19381)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass06" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.36295, 0.0178263, -5.88534)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass07" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.167311, 0.0178263, -6.62421)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass08" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.14885, 0.0178263, -5.47697)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass09" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.143433, 0.0178263, -5.04224)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass10" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.2714, 0.0178263, -4.65977)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass11" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.78, 0.0178263, -3.77551)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass12" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.605264, 0.0178263, -4.24331)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass13" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.93527, 0.0178263, -4.42701)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass14" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.01718, 0.0178263, -5.0865)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass15" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.60175, 0.0178263, -2.93794)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass16" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.317513, 0.0178263, -2.38608)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass17" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.793827, 0.0178263, -3.39271)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass18" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.573073, 0.0178263, -2.17109)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass19" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.60051, 0.0178263, -2.87811)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass20" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.65334, 0.0178258, -3.37896)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass21" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.58568, 0.0178258, -4.29782)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass22" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.78585, 0.0178263, -5.3219)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass23" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.92873, 0.0178263, -6.69846)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass24" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.11078, 0.0178263, -8.43586)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass25" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.04806, 0.0178263, -10.1008)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass26" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.79314, 0.0178258, -5.53676)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass27" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.791007, 0.0178258, 2.48845)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass28" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.465519, 0.0178258, 1.84903)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass29" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.576041, 0.0178258, 3.00775)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Log01" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(0.57253, 0, 2.94486, 0, 3, 0, -2.94486, 0, 0.57253, -0.962349, 0.0178258, 5.13113)
+mesh = ExtResource("48_v4ixe")
+skeleton = NodePath("../../..")
+
+[node name="Log02" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(0.57253, 0, 2.94486, 0, 3, 0, -2.94486, 0, 0.57253, 3.12614, 0.0178263, -5.80185)
+mesh = ExtResource("49_07mi6")
+skeleton = NodePath("../../..")
+
+[node name="Log03" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(0.57253, 0, 2.94486, 0, 3, 0, -2.94486, 0, 0.57253, 0.798121, 0.0178263, 4.11856)
+mesh = ExtResource("50_pyqi4")
+skeleton = NodePath("../../..")
+
+[node name="Log04" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(2.60768, 0, 1.48324, 0, 3, 0, -1.48324, 0, 2.60768, 0.657773, 0.0178263, -5.29834)
+mesh = ExtResource("51_so5fy")
+skeleton = NodePath("../../..")
+
+[node name="Grass30" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.36487, 0.0178258, 3.89871)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass31" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.116133, 0.0178258, 3.70503)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass32" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.95804, 0.0178258, 2.25134)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass33" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.875132, 0.0178258, 3.64085)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass34" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.83687, 0.0178258, 4.15111)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass35" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.65335, 0.0178258, 5.11759)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass36" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.50956, 0.0178258, 5.28129)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass37" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.50357, 0.0178258, 6.68196)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass38" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.92442, 0.0178258, 6.54421)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass39" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.73299, 0.0178258, 7.85509)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass40" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.66991, 0.0178258, 7.04146)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass41" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.66991, 0.0178258, 7.04146)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass42" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.76123, 0.0178258, 8.5845)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass43" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.32473, 0.0178249, 7.67553)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass44" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.14209, 0.0178249, 9.54359)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass45" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.36696, 0.0178249, 6.97363)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass46" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.76032, 0.0178249, 10.9364)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass47" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.24251, 0.0178249, 12.0068)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass48" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.65572, 0.0178249, 5.99798)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass49" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.86907, 0.0178244, 5.16131)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass50" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.27319, 0.0178249, 3.35244)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass51" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.10142, 0.0178249, 4.61411)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass52" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.496372, 0.0178244, 5.89564)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass53" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.61682, 0.0178244, 5.89618)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass54" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.25639, 0.0178244, 4.53689)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Flower01" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.68284, 0.0178244, 5.70378)
+mesh = ExtResource("52_4yyms")
+skeleton = NodePath("../../..")
+
+[node name="Flower02" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.16523, 0.0178242, 5.15702)
+mesh = ExtResource("53_u40au")
+skeleton = NodePath("../../..")
+
+[node name="Flower03" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.05918, 0.0178242, 3.24213)
+mesh = ExtResource("54_vjaun")
+skeleton = NodePath("../../..")
+
+[node name="Flower04" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.22525, 0.0178242, 3.51582)
+mesh = ExtResource("53_u40au")
+skeleton = NodePath("../../..")
+
+[node name="Flower05" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.23418, 0.0178242, 6.78103)
+mesh = ExtResource("55_xcjxj")
+skeleton = NodePath("../../..")
+
+[node name="Flower17" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.42836, 0.0178242, 7.30138)
+mesh = ExtResource("56_freb4")
+skeleton = NodePath("../../..")
+
+[node name="Flower06" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.45476, 0.0178242, 7.60779)
+mesh = ExtResource("53_u40au")
+skeleton = NodePath("../../..")
+
+[node name="Flower07" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.223992, 0.0178242, 2.70895)
+mesh = ExtResource("52_4yyms")
+skeleton = NodePath("../../..")
+
+[node name="Flower09" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.12828, 0.0178242, -3.57762)
+mesh = ExtResource("52_4yyms")
+skeleton = NodePath("../../..")
+
+[node name="Flower10" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.11967, 0.0178242, -5.01318)
+mesh = ExtResource("53_u40au")
+skeleton = NodePath("../../..")
+
+[node name="Flower11" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.70636, 0.0178242, -4.91443)
+mesh = ExtResource("53_u40au")
+skeleton = NodePath("../../..")
+
+[node name="Flower12" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.77326, 0.0178242, -6.87553)
+mesh = ExtResource("52_4yyms")
+skeleton = NodePath("../../..")
+
+[node name="Flower13" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.1422, 0.0178242, -9.33251)
+mesh = ExtResource("52_4yyms")
+skeleton = NodePath("../../..")
+
+[node name="Flower14" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.17127, 0.0178244, -7.05197)
+mesh = ExtResource("54_vjaun")
+skeleton = NodePath("../../..")
+
+[node name="Flower18" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.36338, 0.0178244, -8.76901)
+mesh = ExtResource("55_xcjxj")
+skeleton = NodePath("../../..")
+
+[node name="Flower19" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.8156, 0.0178244, -8.14934)
+mesh = ExtResource("56_freb4")
+skeleton = NodePath("../../..")
+
+[node name="Flower15" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.65269, 0.0178244, -3.593)
+mesh = ExtResource("52_4yyms")
+skeleton = NodePath("../../..")
+
+[node name="Flower16" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.755494, 0.0178244, -3.43211)
+mesh = ExtResource("54_vjaun")
+skeleton = NodePath("../../..")
+
+[node name="Flower08" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.36395, 0.0178242, 9.31431)
+mesh = ExtResource("54_vjaun")
+skeleton = NodePath("../../..")
+
+[node name="Grass55" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.58431, 0.0178244, 3.45737)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass56" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.58431, 0.0178244, 3.45737)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass57" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.7072, 0.0178249, 3.47911)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass58" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.72586, 0.0178249, 7.57161)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass59" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.17247, 0.0178249, -2.72186)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass60" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.02894, 0.0178249, -3.32324)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass61" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.6589, 0.0178249, -4.03119)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass62" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.5531, 0.0178249, -2.73867)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass63" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.90623, 0.0178249, 2.4027)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass64" type="MeshInstance3D" parent="Scene/FrontField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.017, 0.0178254, 2.51197)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="RiverPath" type="Node3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="GroundRiver1" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -0.0795803, 0, 0)
+mesh = ExtResource("6_6f3dk")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver10" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 2.92042, 0, 0)
+mesh = ExtResource("7_cao8d")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver11" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 5.9204, 0, 0)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver12" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 8.9204, 0, 0)
+mesh = ExtResource("7_cao8d")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver13" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 11.9204, 0, 0)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver14" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 14.9204, 0, 0)
+mesh = ExtResource("7_cao8d")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver15" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 17.9204, 0, 0)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver2" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0795803, 0, -3)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver3" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0795803, 0, -6)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver4" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0795803, 0, -9)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver5" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0795803, 0, 3)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver6" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0795803, 0, 6)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver7" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0795803, 0, 9)
+mesh = ExtResource("8_th6bj")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver8" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0795803, 0, 12)
+mesh = ExtResource("9_nw7v7")
+skeleton = NodePath("../../..")
+
+[node name="GroundRiver9" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -0.0795803, 0, -12)
+mesh = ExtResource("9_nw7v7")
+skeleton = NodePath("../../..")
+
+[node name="Water" type="MeshInstance3D" parent="Scene/RiverPath"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.36768, -0.0819632, 0.0252686)
+mesh = SubResource("PlaneMesh_qjhbl")
+surface_material_override/0 = SubResource("ShaderMaterial_6sla2")
+
+[node name="LeftField" type="Node3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 7)
+
+[node name="GroundGrass33" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.08007, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass34" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.08007, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass35" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.08039, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass36" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.08039, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass37" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.08007, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass38" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.08007, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass39" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.08039, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass40" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.08039, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass41" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.08007, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass42" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.08007, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass43" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.08039, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass44" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.08039, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass45" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.91993, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass46" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.91993, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass47" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.91961, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass48" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.91961, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass49" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.91993, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass50" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.91993, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass51" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.91961, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass52" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.91961, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass53" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.91993, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass54" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.91993, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass55" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.91961, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass56" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.91961, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="Tree01" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.77158, 0, -4.52709)
+mesh = ExtResource("11_qgvhq")
+skeleton = NodePath("../../..")
+
+[node name="Tree29" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.70515, 0, -3.55976)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree02" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.98845, 0, -2.66722)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree03" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.24039, 0, -0.705441)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree04" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.16665, 0, -2.67382)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree05" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.28442, -9.53674e-07, -4.12717)
+mesh = ExtResource("57_gvomj")
+skeleton = NodePath("../../..")
+
+[node name="Tree06" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.5448, -9.53674e-07, -4.37911)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree07" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.28825, -4.76837e-07, -2.86498)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree08" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.66705, -4.76837e-07, -1.13283)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree09" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.55261, -4.76837e-07, -4.02981)
+mesh = ExtResource("14_mdoh7")
+skeleton = NodePath("../../..")
+
+[node name="Tree10" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.649427, -4.76837e-07, -2.17248)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree11" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.324291, 4.76837e-07, -4.46473)
+mesh = ExtResource("58_lvngd")
+skeleton = NodePath("../../..")
+
+[node name="Tree12" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.69608, -4.76837e-07, -2.22256)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree13" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.0319, -4.76837e-07, -4.03401)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree14" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.61985, -4.76837e-07, -2.24811)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree15" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.28314, -4.76837e-07, -3.79567)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree30" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.15054, -4.76837e-07, -0.0751405)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree31" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.519129, -4.76837e-07, 0.508589)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree32" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.12477, -4.76837e-07, 1.01413)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree33" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.01289, -4.76837e-07, 1.3304)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree34" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.1666, -9.53674e-07, 1.22584)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree35" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.35472, -7.15256e-07, 1.27716)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree16" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.55679, -4.76837e-07, -4.2997)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree17" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.64883, -4.76837e-07, -2.7773)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree18" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.98213, -4.76837e-07, -4.15914)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree19" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.04168, -4.76837e-07, -2.70306)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree20" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.57023, -4.76837e-07, -4.2178)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree21" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.51937, 0, -1.0621)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree22" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.55176, 0, -0.70813)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree23" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.797079, 0, -1.20688)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree24" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.09183, 0, -0.595513)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree25" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.91099, 0, 0.319532)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree26" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.96426, 0, 0.62235)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree27" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.15896, 0, -1.50635)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree28" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.4475, 0, 0.086432)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Grass01" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.07081, -4.76837e-07, -5.17191)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass02" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.24056, -4.76837e-07, -5.17696)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass03" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.43378, -4.76837e-07, -4.97033)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass04" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.26249, 0.00841928, -4.19567)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass05" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.19502, 0.00841928, -5.13445)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass06" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.3992, 0.00841928, -5.06232)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass07" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.64039, 0.00841928, -4.26657)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass08" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.48866, 0.00841928, -3.76558)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass09" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.10177, 0.00841928, -3.132)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass10" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.18903, 0.00841928, -3.7385)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass11" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.74237, 0.00841928, -3.37686)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass12" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.35352, 0.00841928, -5.09667)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass13" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.27618, 0.00841928, -5.29583)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass14" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.71123, 0.00841939, -4.32762)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass15" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.9332, 0.00841939, -3.51652)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass16" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.80191, 0.00841939, -4.90597)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass17" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.941647, 0.00841939, -5.18067)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass18" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.171288, 0.00841928, -5.21852)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass19" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.05319, 0.00841916, -5.1428)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass20" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.77102, 0.00841916, -5.1727)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass21" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.39362, 0.00841916, -4.43885)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass22" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.883247, 0.00841916, -4.4427)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass23" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.227438, 0.00841916, -3.99575)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass24" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.510986, 0.00841916, -4.56022)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass25" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.729155, 0.00841916, -3.99327)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass26" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.28607, 0.00841916, -3.83569)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass27" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.70312, 0.00841916, -3.35564)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass28" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.806229, 0.00841916, -3.31783)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass29" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0385609, 0.00841916, -3.33504)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass30" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.811047, 0.00841916, -3.52676)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass31" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.57502, 0.00841916, -3.47818)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass32" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.27883, 0.00841916, -2.66822)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass33" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.0396404, 0.00841916, -2.58479)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass34" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.796869, 0.00841916, -2.67504)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass35" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.69604, 0.00841916, -2.9624)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass36" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.57557, 0.00841904, -2.69043)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass37" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.27481, 0.00841892, -3.06643)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass38" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.57764, 0.00841904, -3.4987)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass39" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.66275, 0.00841916, -4.41017)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass40" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.42977, 0.00841904, -5.12325)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass41" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.01716, 0.00841892, -5.54949)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass42" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.16454, 0.00841892, -4.51598)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass43" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.60543, 0.00841904, -5.49811)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass44" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.79781, 0.00841928, -4.97551)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass45" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.89706, 0.00841928, -4.16012)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass46" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.78976, 0.00841939, -3.39102)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass47" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.97451, 0.00841939, -2.91097)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass48" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.43554, 0.00841951, -3.55319)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass49" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.15368, 0.00841963, -5.18055)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass50" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.56613, 0.00841951, -2.11712)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass51" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.03962, 0.00841951, -1.55035)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass52" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.96633, 0.00841939, -1.65186)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass53" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.947628, 0.00841939, -2.06342)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass54" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.128017, 0.00841939, -1.71855)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass55" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.27094, 0.00841939, -1.20853)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass56" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.499865, 0.00841939, -1.19567)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass57" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.36506, 0.00841939, -1.87091)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass58" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.87943, 0.00841939, -1.18539)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass59" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.31548, 0.00841939, -1.92778)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass60" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.94963, 0.00841939, -2.15774)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass61" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.23588, 0.00841939, -2.90501)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass62" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.77545, 0.00841951, -2.29349)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass63" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.60884, 0.00841963, -1.65123)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass64" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.34192, 0.00841963, -1.88459)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass65" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.83947, 0.00841963, -2.39521)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass66" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.48671, 0.00841951, -2.23362)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass70" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.90886, 0.00841951, -1.31355)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass71" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.48997, 0.00841939, -1.85037)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass72" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.92212, 0.00841939, -2.3091)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass73" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.2639, 0.00841939, -2.98321)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass74" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.60124, 0.00841939, -3.09909)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass75" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.10493, 0.00841939, -3.86184)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass76" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.73858, 0.00841939, -4.37813)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass77" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.30393, 0.00841939, -4.04246)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass78" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.39646, 0.00841939, -3.02906)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass79" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.85307, 0.00841951, -2.50922)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass80" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.37493, 0.00841951, -2.14055)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass81" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.22943, 0.00841951, -1.24171)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass82" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.31604, 0.00841951, -0.359074)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass83" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.57282, 0.00841951, 0.274519)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass84" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.84366, 0.00841951, 0.226937)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass85" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.36966, 0.00841951, -0.515226)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass86" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.79443, 0.00841951, -5.3444)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass87" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.56396, 0.00841951, -5.31)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass88" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.16154, 0.00841951, -5.45899)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass89" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.71637, 0.00841951, -5.33448)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass90" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.81854, 0.00841951, -4.38134)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass91" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.16569, 0.00841951, -4.0214)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass92" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.10537, 0.00841951, -3.53347)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass93" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.89387, 0.00841951, -3.56672)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass94" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.14724, 0.00841951, -3.24368)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass95" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.28134, 0.00841951, -2.21082)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass67" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.19048, 0.00841963, -1.47466)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass68" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.60694, 0.00841963, -1.10183)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass69" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.47054, 0.00841963, -0.693516)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Cliff01" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(-2.95912, 0, -0.493542, 0, 3, 0, 0.493542, 0, -2.95912, -6.47482, 1.19209e-06, 1.917)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff02" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(-2.95912, 0, -0.493542, 0, 3, 0, 0.493542, 0, -2.95912, -3.52861, 1.19209e-06, 1.42944)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff03" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(-2.95912, 0, -0.493542, 0, 3, 0, 0.493542, 0, -2.95912, -0.738197, 1.19209e-06, 0.94341)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff04" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(-2.78415, 0, -1.11736, 0, 3, 0, 1.11736, 0, -2.78415, 1.76644, 1.19209e-06, 0.263598)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff05" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(-2.78415, 0, -1.11736, 0, 3, 0, 1.11736, 0, -2.78415, 4.4479, 1.19209e-06, -0.858324)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff06" type="MeshInstance3D" parent="Scene/LeftField"]
+transform = Transform3D(-2.27993, 0, -1.94986, 0, 3, 0, 1.94986, 0, -2.27993, 6.63209, 9.53674e-07, -2.17132)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="RightField" type="Node3D" parent="Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, -1, 17, 0, -7)
+
+[node name="GroundGrass33" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.08007, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass34" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.08007, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass35" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.08039, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass36" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.08039, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass37" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.08007, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass38" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.08007, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass39" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.08039, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass40" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.08039, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass41" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.08007, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass42" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.08007, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass43" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.08039, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass44" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.08039, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass45" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.91993, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass46" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.91993, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass47" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.91961, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass48" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.91961, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass49" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.91993, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass50" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.91993, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass51" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.91961, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass52" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.91961, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass53" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.91993, 0, -4)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass54" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.91993, 0, -1)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass55" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.91961, 0, 2)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="GroundGrass56" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.91961, 0, 5)
+mesh = ExtResource("3_noufw")
+skeleton = NodePath("../../..")
+
+[node name="Tree01" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.77158, 0, -4.52709)
+mesh = ExtResource("60_5cuxy")
+skeleton = NodePath("../../..")
+
+[node name="Tree29" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.70515, 0, -3.55976)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree02" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.98845, 0, -2.66722)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree03" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.24039, 0, -0.705441)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree04" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.16665, 0, -2.67382)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree05" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.28442, -9.53674e-07, -4.12717)
+mesh = ExtResource("57_gvomj")
+skeleton = NodePath("../../..")
+
+[node name="Tree06" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.5448, -9.53674e-07, -4.37911)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree07" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.28825, -4.76837e-07, -2.86498)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree08" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.66705, -4.76837e-07, -1.13283)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree09" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.55261, -4.76837e-07, -4.02981)
+mesh = ExtResource("57_gvomj")
+skeleton = NodePath("../../..")
+
+[node name="Tree10" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.649427, -4.76837e-07, -2.17248)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree11" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.324291, 4.76837e-07, -4.46473)
+mesh = ExtResource("57_gvomj")
+skeleton = NodePath("../../..")
+
+[node name="Tree12" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.69608, -4.76837e-07, -2.22256)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree13" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.0319, -4.76837e-07, -4.03401)
+mesh = ExtResource("61_ncyh5")
+skeleton = NodePath("../../..")
+
+[node name="Tree14" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.61985, -4.76837e-07, -2.24811)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree15" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.28314, -4.76837e-07, -3.79567)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree30" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.15054, -4.76837e-07, -0.0751405)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree31" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.519129, -4.76837e-07, 0.508589)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree32" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.12477, -4.76837e-07, 1.01413)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree33" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.01289, -4.76837e-07, 1.3304)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree34" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.1666, -9.53674e-07, 1.22584)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree35" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.35472, -7.15256e-07, 1.27716)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree16" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.55679, -4.76837e-07, -4.2997)
+mesh = ExtResource("19_m0y4a")
+skeleton = NodePath("../../..")
+
+[node name="Tree17" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.64883, -4.76837e-07, -2.7773)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree18" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.98213, -4.76837e-07, -4.15914)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree19" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.04168, -4.76837e-07, -2.70306)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree20" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.57023, -4.76837e-07, -4.2178)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree21" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.51937, 0, -1.0621)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree22" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.55176, 0, -0.70813)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree23" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.797079, 0, -1.20688)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree24" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.09183, 0, -0.595513)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree25" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.91099, 0, 0.319532)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree26" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.96426, 0, 0.62235)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree27" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.15896, 0, -1.50635)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Tree28" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.4475, 0, 0.086432)
+mesh = ExtResource("6_vytn3")
+skeleton = NodePath("../../..")
+
+[node name="Grass01" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.07081, -4.76837e-07, -5.17191)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass02" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.24056, -4.76837e-07, -5.17696)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass03" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.43378, -4.76837e-07, -4.97033)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass04" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.26249, 0.00841928, -4.19567)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass05" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.19502, 0.00841928, -5.13445)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass06" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.3992, 0.00841928, -5.06232)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass07" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.64039, 0.00841928, -4.26657)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass08" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.48866, 0.00841928, -3.76558)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass09" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.10177, 0.00841928, -3.132)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass10" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.18903, 0.00841928, -3.7385)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass11" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.74237, 0.00841928, -3.37686)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass12" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.35352, 0.00841928, -5.09667)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass13" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.27618, 0.00841928, -5.29583)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass14" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.71123, 0.00841939, -4.32762)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass15" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.9332, 0.00841939, -3.51652)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass16" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.80191, 0.00841939, -4.90597)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass17" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.941647, 0.00841939, -5.18067)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass18" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.171288, 0.00841928, -5.21852)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass19" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.05319, 0.00841916, -5.1428)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass20" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.77102, 0.00841916, -5.1727)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass21" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.39362, 0.00841916, -4.43885)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass22" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.883247, 0.00841916, -4.4427)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass23" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.227438, 0.00841916, -3.99575)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass24" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.510986, 0.00841916, -4.56022)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass25" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.729155, 0.00841916, -3.99327)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass26" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.28607, 0.00841916, -3.83569)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass27" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.70312, 0.00841916, -3.35564)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass28" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.806229, 0.00841916, -3.31783)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass29" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0385609, 0.00841916, -3.33504)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass30" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.811047, 0.00841916, -3.52676)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass31" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.57502, 0.00841916, -3.47818)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass32" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.27883, 0.00841916, -2.66822)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass33" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.0396404, 0.00841916, -2.58479)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass34" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.796869, 0.00841916, -2.67504)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass35" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.69604, 0.00841916, -2.9624)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass36" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.57557, 0.00841904, -2.69043)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass37" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.27481, 0.00841892, -3.06643)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass38" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.57764, 0.00841904, -3.4987)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass39" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.66275, 0.00841916, -4.41017)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass40" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.42977, 0.00841904, -5.12325)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass41" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.01716, 0.00841892, -5.54949)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass42" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.16454, 0.00841892, -4.51598)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass43" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.60543, 0.00841904, -5.49811)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass44" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.79781, 0.00841928, -4.97551)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass45" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.89706, 0.00841928, -4.16012)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass46" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.78976, 0.00841939, -3.39102)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass47" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 3.97451, 0.00841939, -2.91097)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass48" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.43554, 0.00841951, -3.55319)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass49" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.15368, 0.00841963, -5.18055)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass50" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.56613, 0.00841951, -2.11712)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass51" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.03962, 0.00841951, -1.55035)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass52" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.96633, 0.00841939, -1.65186)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass53" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.947628, 0.00841939, -2.06342)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass54" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.128017, 0.00841939, -1.71855)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass55" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.27094, 0.00841939, -1.20853)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass56" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.499865, 0.00841939, -1.19567)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass57" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.36506, 0.00841939, -1.87091)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass58" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.87943, 0.00841939, -1.18539)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass59" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.31548, 0.00841939, -1.92778)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass60" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.94963, 0.00841939, -2.15774)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass61" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.23588, 0.00841939, -2.90501)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass62" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.77545, 0.00841951, -2.29349)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass63" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.60884, 0.00841963, -1.65123)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass64" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.34192, 0.00841963, -1.88459)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass65" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.83947, 0.00841963, -2.39521)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass66" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.48671, 0.00841951, -2.23362)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass70" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.90886, 0.00841951, -1.31355)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass71" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.48997, 0.00841939, -1.85037)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass72" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.92212, 0.00841939, -2.3091)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass73" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.2639, 0.00841939, -2.98321)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass74" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -6.60124, 0.00841939, -3.09909)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass75" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.10493, 0.00841939, -3.86184)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass76" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.73858, 0.00841939, -4.37813)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass77" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.30393, 0.00841939, -4.04246)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass78" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.39646, 0.00841939, -3.02906)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass79" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.85307, 0.00841951, -2.50922)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass80" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.37493, 0.00841951, -2.14055)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass81" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.22943, 0.00841951, -1.24171)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass82" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.31604, 0.00841951, -0.359074)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass83" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.57282, 0.00841951, 0.274519)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass84" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.84366, 0.00841951, 0.226937)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass85" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.36966, 0.00841951, -0.515226)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass86" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.79443, 0.00841951, -5.3444)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass87" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.56396, 0.00841951, -5.31)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass88" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.16154, 0.00841951, -5.45899)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass89" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.71637, 0.00841951, -5.33448)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass90" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.81854, 0.00841951, -4.38134)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass91" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.16569, 0.00841951, -4.0214)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass92" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.10537, 0.00841951, -3.53347)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass93" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.89387, 0.00841951, -3.56672)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass94" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.14724, 0.00841951, -3.24368)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass95" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.28134, 0.00841951, -2.21082)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass67" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.19048, 0.00841963, -1.47466)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass68" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4.60694, 0.00841963, -1.10183)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Grass69" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -3.47054, 0.00841963, -0.693516)
+mesh = ExtResource("34_y1htt")
+skeleton = NodePath("../../..")
+
+[node name="Cliff01" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(-2.95912, 0, -0.493542, 0, 3, 0, 0.493542, 0, -2.95912, -6.47482, 1.19209e-06, 1.917)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff02" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(-2.95912, 0, -0.493542, 0, 3, 0, 0.493542, 0, -2.95912, -3.52861, 1.19209e-06, 1.42944)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff03" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(-2.95912, 0, -0.493542, 0, 3, 0, 0.493542, 0, -2.95912, -0.738197, 1.19209e-06, 0.94341)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff04" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(-2.78415, 0, -1.11736, 0, 3, 0, 1.11736, 0, -2.78415, 1.76644, 1.19209e-06, 0.263598)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff05" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(-2.78415, 0, -1.11736, 0, 3, 0, 1.11736, 0, -2.78415, 4.4479, 1.19209e-06, -0.858324)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="Cliff06" type="MeshInstance3D" parent="Scene/RightField"]
+transform = Transform3D(-2.27993, 0, -1.94986, 0, 3, 0, 1.94986, 0, -2.27993, 6.63209, 9.53674e-07, -2.17132)
+mesh = ExtResource("59_2remk")
+skeleton = NodePath("../../..")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7a7h8")
+
+[connection signal="input_event" from="Slot/Buttons/SpinButton/Area3D" to="." method="_on_spin_button_input"]
+[connection signal="input_event" from="Slot/Buttons/SpinLever/Ball/Area3D" to="." method="_on_spin_lever_input"]
