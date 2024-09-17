@@ -25,4 +25,4 @@
 </p>
 
 ## Description
-A prototype for a 3D Slot Game made in Godot 4.0
+A prototype for a 3D Slot Game made in Godot 4.3
