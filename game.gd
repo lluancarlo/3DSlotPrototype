@@ -1,9 +1,8 @@
 extends Node3D
 
-@onready var _slot_machine := $Slot/SlotMachine3D as Node3D
+@onready var _slot_machine := $Slot/SlotMachine3D as SlotMachine3D
 @onready var _spin_button := $Slot/Buttons/SpinButton as Node3D
 @onready var _spin_lever := $Slot/Buttons/SpinLever as Node3D
-@onready var _cam := $Cam as Camera3D
 @onready var _anim := $AnimPlayer as AnimationPlayer
 
 
@@ -27,7 +26,7 @@ func stop_spin() -> void:
 
 
 ## Signals
-func _on_spin_button_input(camera, event, position, normal, shape_idx):
+func _on_spin_button_input(_camera, event, _position, _normal, _shape_idx) -> void:
 	var mouse_click = event as InputEventMouseButton
 	if mouse_click and mouse_click.button_index == 1 and mouse_click.pressed:
 		var t = get_tree().create_tween()
@@ -39,7 +38,7 @@ func _on_spin_button_input(camera, event, position, normal, shape_idx):
 		t.tween_property(_spin_button, "position:x", 0.15, 0.1)
 
 
-func _on_spin_lever_input(camera, event, position, normal, shape_idx):
+func _on_spin_lever_input(_camera, event, _position, _normal, _shape_idx):
 	var mouse_click = event as InputEventMouseButton
 	if mouse_click and mouse_click.button_index == 1 and mouse_click.pressed:
 		var t = get_tree().create_tween()
